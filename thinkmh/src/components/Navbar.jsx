@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import logo from "/Think MH.png";
 
 import {
   FaChartLine,
@@ -35,17 +36,17 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-
         {/* Logo */}
         <Link to="/">
-          <h1 className="text-2xl font-bold text-blue-900">
-            ThinkMH
-          </h1>
+          <img
+            src={logo}
+            alt="ThinkMH Logo"
+            className="h-12 w-auto object-cover"
+          />
         </Link>
 
         {/* Navigation */}
         <ul className="hidden md:flex gap-8 font-medium text-gray-700 items-center">
-
           <li>
             <Link to="/about" className="hover:text-blue-700 transition">
               About Us
@@ -95,7 +96,6 @@ const Navbar = () => {
                 onMouseLeave={() => setShowInsights(false)}
               >
                 <div className="grid grid-cols-2 gap-10">
-
                   {/* Categories */}
                   <div>
                     <h3 className="font-bold text-blue-900 mb-5">
@@ -103,7 +103,6 @@ const Navbar = () => {
                     </h3>
 
                     <ul className="space-y-4">
-
                       <li>
                         <Link
                           to="/insights?category=economy"
@@ -169,7 +168,6 @@ const Navbar = () => {
                           Maharashtra Trends
                         </Link>
                       </li>
-
                     </ul>
                   </div>
 
@@ -180,7 +178,6 @@ const Navbar = () => {
                     </h3>
 
                     <ul className="space-y-4">
-
                       <li>
                         <Link
                           to="/insights?format=article"
@@ -224,10 +221,8 @@ const Navbar = () => {
                           Opinion Pieces
                         </Link>
                       </li>
-
                     </ul>
                   </div>
-
                 </div>
 
                 <div className="mt-8 border-t pt-5">
@@ -239,7 +234,6 @@ const Navbar = () => {
                     View All Insights →
                   </Link>
                 </div>
-
               </div>
             )}
           </li>
@@ -249,9 +243,7 @@ const Navbar = () => {
               Contact Us
             </Link>
           </li>
-
         </ul>
-
       </div>
     </nav>
   );

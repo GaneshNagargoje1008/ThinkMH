@@ -36,7 +36,7 @@ const Partners = () => {
               {/* Dynamic Logo Wrapper Asset Box */}
               <div className="h-28 w-full bg-slate-50/80 rounded-2xl border border-slate-100 p-4 flex items-center justify-center mb-6 relative overflow-hidden group-hover:bg-blue-50/50 transition-colors">
                 <img
-                  src="/ThinkBank.svg"
+                  src="/Think Bank.png"
                   alt="Think Bank"
                   className="h-16 w-auto object-contain relative z-10 group-hover:scale-105 transition-transform duration-300"
                 />
@@ -69,7 +69,7 @@ const Partners = () => {
               {/* Logo Wrapper Asset Box */}
               <div className="h-28 w-full bg-slate-50/80 rounded-2xl border border-slate-100 p-4 flex items-center justify-center mb-6">
                 <img
-                  src="/images/maharashtrafirst.png"
+                  src="\Maharashtra First Logo Virendra Patil Final 18 May.png"
                   alt="Maharashtra First"
                   className="h-16 w-auto object-contain"
                 />
@@ -106,7 +106,7 @@ const Partners = () => {
               {/* Dynamic Logo Wrapper Asset Box */}
               <div className="h-28 w-full bg-slate-50/80 rounded-2xl border border-slate-100 p-4 flex items-center justify-center mb-6 relative overflow-hidden group-hover:bg-blue-50/50 transition-colors">
                 <img
-                  src="/pudhari.jpg"
+                  src="/Pudhari.png"
                   alt="Pudhari"
                   className="h-16 w-auto object-contain relative z-10 group-hover:scale-105 transition-transform duration-300"
                 />

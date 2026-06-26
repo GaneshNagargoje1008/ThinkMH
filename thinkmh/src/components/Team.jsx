@@ -23,7 +23,7 @@ const Team = () => {
           {/* Photo */}
           <div className="flex justify-center">
             <img
-              src="/mansi.jpg"
+              src="/ManasiPhadke.png"
               alt="Dr. Manasi Phadake"
               className="w-56 h-56 rounded-full object-cover shadow-xl border-4 border-blue-100"
             />

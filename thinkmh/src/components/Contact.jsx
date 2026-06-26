@@ -31,11 +31,15 @@ const ContactPage = () => {
   const partners = [
     {
       name: "Partner 1",
-      logo: "/ThinkBank.svg",
+      logo: "/Think Bank.png",
     },
     {
       name: "Partner 2",
-      logo: "/pudhari.jpg",
+      logo: "/Maharashtra First Logo Virendra Patil Final 18 May.png",
+    },
+    {
+      name: "Partner 3",
+      logo: "/Pudhari.png",
     },
   ];
 
