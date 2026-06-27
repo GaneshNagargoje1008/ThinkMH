@@ -20,7 +20,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <img
-              src="/images/logo.png"
+              src="/Think MH.png"
               alt="ThinkMH Logo"
               className="h-16 mb-4"
             />

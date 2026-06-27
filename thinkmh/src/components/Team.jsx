@@ -2,90 +2,138 @@ import React from "react";
 
 const Team = () => {
   return (
-    <section className="bg-white-50 py-24">
+    <section className="bg-slate-50 py-24">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Section Header */}
-        <div className="text-center mb-20">
-          <h2 className="text-5xl font-bold text-slate-900 mt-3">
+        {/* Header */}
+        <div className="text-center max-w-4xl mx-auto mb-14">
+          <h2 className="text-4xl lg:text-5xl font-bold text-slate-900">
             Meet Our Leadership
           </h2>
 
-          <p className="text-gray-600 mt-4 max-w-3xl mx-auto">
-            ThinkMH is driven by experienced professionals with expertise in
-            research, technology, media, public engagement, and Maharashtra's
-            socio-economic landscape.
+          <div className="w-20 h-1 bg-blue-700 mx-auto mt-5 rounded-full"></div>
+
+          <p className="mt-6 text-lg text-slate-600 leading-8">
+            ThinkMH is driven by experienced professionals bringing expertise in
+            research, governance, technology, media, and public policy to
+            deliver evidence-based insights for Maharashtra's socio-economic
+            development.
           </p>
         </div>
 
-        {/* Dr. Manasi Phadake */}
+        {/* ======================= CARD 1 ======================= */}
 
-        <div className="grid md:grid-cols-3 gap-10 items-center mb-24">
-          {/* Photo */}
-          <div className="flex justify-center">
-            <img
-              src="/ManasiPhadke.png"
-              alt="Dr. Manasi Phadake"
-              className="w-56 h-56 rounded-full object-cover shadow-xl border-4 border-blue-100"
-            />
-          </div>
+        <div className="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden mb-16 hover:shadow-2xl transition duration-500">
+          <div className="grid lg:grid-cols-5">
+            {/* Image */}
 
-          {/* Content */}
-          <div className="md:col-span-2">
-            <h3 className="text-4xl font-bold text-slate-900 mb-3">
-              Dr. Manasi Phadake
-            </h3>
+            <div className="lg:col-span-2 bg-slate-100 flex justify-center items-center p-10">
+              <img
+                src="/ManasiPhadke.png"
+                alt="Dr. Manasi Phadake"
+                className="w-72 h-80 object-cover rounded-2xl shadow-lg"
+              />
+            </div>
 
-            {/* <p className="text-blue-700 font-semibold text-lg mb-5">
-              Designation
-            </p> */}
+            {/* Content */}
 
-            <p className="text-gray-700 leading-8 text-lg">
-              Dr. Manasi Phadake is a key member of ThinkMH's leadership team.
-              Her work focuses on research, analysis, and strategic direction
-              across governance, society, and public policy initiatives.
-              Detailed profile information can be updated once finalized.
-            </p>
+            <div className="lg:col-span-3 p-12 flex flex-col justify-center">
+              <span className="uppercase tracking-[0.25em] text-blue-700 text-sm font-semibold">
+                Research Leadership
+              </span>
+
+              <h3 className="text-4xl font-bold text-slate-900 mt-3">
+                Dr. Manasi Phadake
+              </h3>
+
+              <div className="w-20 h-1 bg-blue-700 rounded-full my-6"></div>
+
+              <p className="text-slate-600 leading-9 text-lg">
+                Dr. Manasi Phadake is a key member of ThinkMH's leadership team.
+                Her work focuses on research, analysis, strategic planning,
+                governance, and public policy initiatives. She contributes
+                towards evidence-based decision making through high-quality
+                research and socio-economic analysis.
+              </p>
+
+              <div className="flex flex-wrap gap-3 mt-8">
+                <span className="px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-medium">
+                  Governance
+                </span>
+
+                <span className="px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-medium">
+                  Public Policy
+                </span>
+
+                <span className="px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-medium">
+                  Research
+                </span>
+
+                <span className="px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-medium">
+                  Strategy
+                </span>
+              </div>
+            </div>
           </div>
         </div>
 
-        {/* Vinayak Pachalag */}
+        {/* ======================= CARD 2 ======================= */}
 
-        <div className="grid md:grid-cols-3 gap-10 items-center">
-          {/* Content */}
-          <div className="md:col-span-2 order-2 md:order-1">
-            <h3 className="text-4xl font-bold text-slate-900 mb-3">
-              Vinayak Pachalag
-            </h3>
+        <div className="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-2xl transition duration-500">
+          <div className="grid lg:grid-cols-5">
+            {/* Content */}
 
-            <p className="text-blue-700 font-semibold text-lg mb-4">
-              Founder, Director & CEO
-            </p>
+            <div className="lg:col-span-3 p-12 flex flex-col justify-center order-2 lg:order-1">
+              <span className="uppercase tracking-[0.25em] text-blue-700 text-sm font-semibold">
+                Founder & CEO
+              </span>
 
-            <p className="font-medium text-gray-800 mb-5">
-              M.Tech in AI | Electronics Engineer | Author | Media Strategist
-            </p>
+              <h3 className="text-4xl font-bold text-slate-900 mt-3">
+                Vinayak Pachalag
+              </h3>
 
-            <p className="text-gray-700 leading-8 text-lg">
-              With 150+ lectures and 2 books, Vinayak brings deep insights into
-              media, technology, and public engagement. He has spearheaded
-              award-winning campaigns like Amacha Tharalay and is a recipient of
-              the Maharshi Narad Puraskar.
-            </p>
+              <div className="w-20 h-1 bg-blue-700 rounded-full my-6"></div>
 
-            <p className="text-gray-700 leading-8 text-lg mt-4">
-              He serves as an advisor to educational institutions and national
-              innovation councils, contributing to policy discussions,
-              technology adoption, and public engagement initiatives.
-            </p>
-          </div>
+              <p className="font-semibold text-slate-700 mb-6 text-lg">
+                M.Tech in AI | Electronics Engineer | Author | Media Strategist
+              </p>
 
-          {/* Photo */}
-          <div className="flex justify-center order-1 md:order-2">
-            <img
-              src="/vinayak.jpg"
-              alt="Vinayak Pachalag"
-              className="w-56 h-56 rounded-full object-cover shadow-xl border-4 border-blue-100"
-            />
+              <p className="text-slate-600 leading-9 text-lg">
+                With over 150 lectures and two published books, Vinayak Pachalag
+                has built a distinguished career spanning artificial
+                intelligence, media, technology, innovation, and public
+                engagement. He has led award-winning campaigns and actively
+                contributes to policy discussions, institutional development,
+                and technology adoption.
+              </p>
+
+              <div className="flex flex-wrap gap-3 mt-8">
+                <span className="px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-medium">
+                  Artificial Intelligence
+                </span>
+
+                <span className="px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-medium">
+                  Media
+                </span>
+
+                <span className="px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-medium">
+                  Technology
+                </span>
+
+                <span className="px-4 py-2 rounded-full bg-blue-50 text-blue-700 text-sm font-medium">
+                  Innovation
+                </span>
+              </div>
+            </div>
+
+            {/* Image */}
+
+            <div className="lg:col-span-2 bg-slate-100 flex justify-center items-center p-10 order-1 lg:order-2">
+              <img
+                src="/vinayak.jpg"
+                alt="Vinayak Pachalag"
+                className="w-72 h-80 object-cover rounded-2xl shadow-lg"
+              />
+            </div>
           </div>
         </div>
       </div>
