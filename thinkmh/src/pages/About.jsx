@@ -312,7 +312,7 @@ const MemberPhoto = ({ photo, initials, name }) => {
 
 // ─── SECTIONS ────────────────────────────────────────────────────────────────
 const Hero = () => (
-  <section style={{ background: C.navy, padding: "120px 0 0", position: "relative" }}>
+  <section style={{ background: C.navy, padding: "150px 0 0", position: "relative" }}>
     <div className="tmh-container">
       <Eyebrow>Maharashtra · Research · Intelligence</Eyebrow>
       <h1 style={{

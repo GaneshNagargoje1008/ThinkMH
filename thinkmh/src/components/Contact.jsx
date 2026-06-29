@@ -67,7 +67,7 @@ const ContactPage = () => {
           {/* LEFT CONTAINER LAYER: Solid Dark Corporate Contact Deck & Highlights */}
           <div className="lg:col-span-5 space-y-6">
             {/* Primary Details Panel */}
-            <div className="bg-[#0b132b] text-white rounded-2xl p-6 sm:p-8 shadow-xl border border-slate-800">
+            <div className="bg-gradient-to-br from-[#071A3D] via-[#0B2559] to-[#102C6A] text-white rounded-2xl p-6 sm:p-8 shadow-2xl border border-blue-900/30">
               <h3 className="text-lg font-bold uppercase tracking-wider text-slate-300 mb-6 pb-3 border-b border-white/5">
                 Contact Information
               </h3>

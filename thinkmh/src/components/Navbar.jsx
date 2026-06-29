@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 import logo from "/Think MH.png";
 
 import {
@@ -18,6 +19,9 @@ import {
 const Navbar = () => {
   const [showInsights, setShowInsights] = useState(false);
   const menuRef = useRef(null);
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const [mobileInsights, setMobileInsights] = useState(false);
+  const [mobileFormats, setMobileFormats] = useState(false);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -44,6 +48,15 @@ const Navbar = () => {
             className="h-12 w-auto object-cover"
           />
         </Link>
+
+        <div className="md:hidden">
+          <button
+            onClick={() => setMobileMenu(!mobileMenu)}
+            className="text-2xl text-blue-900"
+          >
+            {mobileMenu ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
 
         {/* Navigation */}
         <ul className="hidden md:flex gap-8 font-medium text-gray-700 items-center">
@@ -245,6 +258,89 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+
+      {mobileMenu && (
+        <div className="md:hidden bg-white shadow-xl border-t">
+          <div className="flex flex-col p-6 space-y-5">
+            <Link to="/" onClick={() => setMobileMenu(false)}>
+              Home
+            </Link>
+
+            <Link to="/about" onClick={() => setMobileMenu(false)}>
+              About Us
+            </Link>
+
+            <Link to="/team" onClick={() => setMobileMenu(false)}>
+              Team
+            </Link>
+
+            <Link to="/pulse-tracker" onClick={() => setMobileMenu(false)}>
+              Pulse Tracker
+            </Link>
+
+            <Link to="/market-tracker" onClick={() => setMobileMenu(false)}>
+              Market Tracker
+            </Link>
+
+            {/* Insights */}
+
+            <button
+              onClick={() => setMobileInsights(!mobileInsights)}
+              className="flex justify-between items-center"
+            >
+              Insights
+              <FaChevronDown
+                className={`transition ${mobileInsights ? "rotate-180" : ""}`}
+              />
+            </button>
+
+            {mobileInsights && (
+              <div className="ml-4 flex flex-col space-y-3">
+                <Link to="/insights?category=economy">Economy</Link>
+
+                <Link to="/insights?category=governance">Governance</Link>
+
+                <Link to="/insights?category=politics">Politics</Link>
+
+                <Link to="/insights?category=business">Business</Link>
+
+                <Link to="/insights?category=society">Society</Link>
+
+                <Link to="/insights?category=maharashtra-trends">
+                  Maharashtra Trends
+                </Link>
+
+                <button
+                  onClick={() => setMobileFormats(!mobileFormats)}
+                  className="flex justify-between items-center"
+                >
+                  Content Formats
+                  <FaChevronDown
+                    className={`transition ${
+                      mobileFormats ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+
+                {mobileFormats && (
+                  <div className="ml-4 flex flex-col space-y-2">
+                    <Link to="/insights?format=article">Articles</Link>
+                    <Link to="/insights?format=infographic">Infographics</Link>
+                    <Link to="/insights?format=data-story">Data Stories</Link>
+                    <Link to="/insights?format=opinion">Opinion Pieces</Link>
+                  </div>
+                )}
+
+                <Link to="/insights">View All Insights →</Link>
+              </div>
+            )}
+
+            <Link to="/contact" onClick={() => setMobileMenu(false)}>
+              Contact Us
+            </Link>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
